@@ -39,7 +39,16 @@ def predict_datapoint():
         
         pred=int(predict_pipeline.predict(final_data))
 
-        return render_template("result.html",final_result=pred)
+        # Mapping dictionary for GPA to grades
+        gpa_to_grade = {
+            0: 'A (GPA >= 3.5)',
+            1: 'B (3.0 <= GPA < 3.5)',
+            2: 'C (2.5 <= GPA < 3.0)',
+            3: 'D (2.0 <= GPA < 2.5)',
+            4: 'F (GPA < 2.0)'
+        }
+
+        return render_template("result.html",final_result=gpa_to_grade.get(pred))
 
 #execution begin
 if __name__ == '__main__':
