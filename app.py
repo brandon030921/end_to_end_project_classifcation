@@ -37,7 +37,7 @@ def predict_datapoint():
         
         predict_pipeline=PredictPipeline()
         
-        pred=predict_pipeline.predict(final_data)
+        pred=int(predict_pipeline.predict(final_data))
 
         return render_template("result.html",final_result=pred)
 

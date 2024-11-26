@@ -32,7 +32,7 @@ class CustomData:
     def __init__(self,
                  Gender:int,
                  Ethnicity:int,
-                 ParentEducation:int,
+                 ParentalEducation:int,
                  Tutoring:int,
                  ParentalSupport:int,
                  Extracurricular:int,
@@ -44,7 +44,7 @@ class CustomData:
         
         self.Gender=Gender
         self.Ethnicity=Ethnicity
-        self.ParentEducation=ParentEducation
+        self.ParentalEducation=ParentalEducation
         self.Tutoring=Tutoring    
         self.ParentalSupport=ParentalSupport
         self.Extracurricular=Extracurricular
@@ -60,7 +60,7 @@ class CustomData:
                 custom_data_input_dict = {
                     'Gender':[self.Gender],
                     'Ethnicity':[self.Ethnicity],
-                    'ParentEducation':[self.ParentEducation],
+                    'ParentalEducation':[self.ParentalEducation],
                     'Tutoring':[self.Tutoring],
                     'ParentalSupport':[self.ParentalSupport],
                     'Extracurricular':[self.Extracurricular],
