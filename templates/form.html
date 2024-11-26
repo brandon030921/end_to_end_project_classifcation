@@ -1,0 +1,100 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+
+  
+    <div class="form-group">
+        <label for="StudyTimeWeekly">StudyTimeWeekly:</label>
+        <input type="text" id="StudyTimeWeekly" name="StudyTimeWeekly" placeholder="Enter weekly study time in hours, ranging from 0 to 20(int)">
+    </div>         
+
+    <div class="form-group">
+        <label for="Absences">Absences:</label>
+        <input type="text" id="Absences" name="Absences" placeholder="Enter number of absences during the school year, ranging from 0 to 30(int)">
+    </div>         
+  
+<div class="form-group">
+  <label for="Volunteering">Volunteering:</label>
+  <select id="Volunteering" name="Volunteering">
+    <option value="0">No</option>
+    <option value="1">Yes</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="Music">Music:</label>
+  <select id="Music" name="Music">
+    <option value="0">No</option>
+    <option value="1">Yes</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="Sports">Sports:</label>
+  <select id="Sports" name="Sports">
+    <option value="0">No</option>
+    <option value="1">Yes</option>
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="Extracurricular ">Extracurricular:</label>
+    <select id="Extracurricular " name="Extracurricular">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="ParentalSupport ">Parental Support:</label>
+    <select id="ParentalSupport " name="ParentalSupport ">
+      <option value="0">None</option>
+      <option value="1">Low</option>
+      <option value="2">Moderate</option>
+     <option value="3">High</option>
+     <option value="4">Very High</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="Tutoring ">Tutoring:</label>
+    <select id="Tutoring " name="Tutoring ">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="ParentalEducation ">Parental Education:</label>
+    <select id="ParentalEducation " name="ParentalEducation ">
+      <option value="0">None</option>
+      <option value="1">High School</option>
+      <option value="2">Some College</option>
+     <option value="3">Bachelor's</option>
+     <option value="4">Higher</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="Ethnicity">Ethnicity:</label>
+    <select id="Ethnicity" name="Ethnicity ">
+      <option value="0">Caucasian</option>
+      <option value="1">African American</option>
+      <option value="2">Asian</option>
+     <option value="3">Other</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="Gender ">Gender:</label>
+    <select id="Gender " name="Gender ">
+      <option value="0">Male</option>
+      <option value="1">Female</option>
+    </select>
+</div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
