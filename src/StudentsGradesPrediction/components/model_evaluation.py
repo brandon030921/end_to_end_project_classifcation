@@ -7,6 +7,8 @@ import mlflow.sklearn
 import numpy as np
 import pickle
 from src.StudentsGradesPrediction.utils.utils import load_object
+import dagshub
+
 
 
 
@@ -29,7 +31,7 @@ class ModelEvaluation:
             model_path=os.path.join("artifacts","model.pkl")
             model=load_object(model_path)
 
-        
+            dagshub.init(repo_owner='brandon030921', repo_name='end_to_end_project_classifcation', mlflow=True)
 
             mlflow.set_registry_uri("https://dagshub.com/brandon030921/end_to_end_project_classifcation.mlflow")
             
